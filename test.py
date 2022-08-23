@@ -3,4 +3,8 @@
 # @Author : Royster
 # @File : test.py
 # @Software : PyCharm
-print("a")
+import random
+
+caidan = ["全家福", "双拼"]
+choose = random.randint(0, 1)
+print(caidan[choose])
