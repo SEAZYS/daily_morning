@@ -123,7 +123,7 @@ for user in users:
         "zys_birthday": {"value": get_birthday("12-07"), "color": "#%06x" % 0xFF33FF},
         # 施庭超专属骚话
         "stc_sh": {"value": "高山自由风景在 人生本就多尘埃", "color": "#%06x" % 0xFF9900},
-        "zsy_jl": {"value": stimulate_list[random.randint(0, len(stimulate_list))], "color": "#%06x" % 0xFF9900},
+        "zsy_jl": {"value": stimulate_list[random.randint(0, len(stimulate_list) - 1)], "color": "#%06x" % 0xFF9900},
         "words": {"value": get_words(), "color": "#%06x" % 0xFF9900}}
     res = wm.send_template(users[num], template_list[num], data)
     num = num + 1

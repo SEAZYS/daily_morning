@@ -6,5 +6,5 @@
 import random
 
 caidan = ["全家福", "双拼"]
-choose = random.randint(0, 1)
+choose = random.randint(0, len(caidan)-1)
 print(caidan[choose])
